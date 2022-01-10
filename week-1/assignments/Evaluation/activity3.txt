@@ -1,0 +1,2 @@
+I Opened the Activity2.xml file that had a xml data.
+after opening it in an excel file the data was converted into a tabular format.

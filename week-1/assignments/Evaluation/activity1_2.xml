@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<people>
+    <person>
+        <name>Ashley</name>
+        <hobbies>Gaming</hobbies>
+        <intrests>Traveling<intrests>
+    </person>
+    <person>
+        <name>Sam</name>
+        <hobbies>Swimming</hobbies>
+        <intrests>Sports<intrests>
+    </person>
+    <person>
+        <name>Ron</name>
+        <hobbies>Painting</hobbies>
+        <intrests>Art<intrests>
+    </person>
+    <person>
+        <name>David</name>
+        <hobbies>Poetry</hobbies>
+        <intrests>Blogging<intrests>
+    </person>
+    <person>
+        <name>John</name>
+        <hobbies>Play Gutair</hobbies>
+        <intrests>Music<intrests>
+    </person>
+    <person>
+        <name>Alex</name>
+        <hobbies>FootBall</hobbies>
+        <intrests>Travelling<intrests>
+    </person>
+    <person>
+        <name>Smith</name>
+        <hobbies>Cricket</hobbies>
+        <intrests>Sports<intrests>
+    </person>
+    <person>
+        <name>Jason</name>
+        <hobbies>Gaming</hobbies>
+        <intrests>Music<intrests>
+    </person>
+    <person>
+        <name>Jake</name>
+        <hobbies>Drawing</hobbies>
+        <intrests>Travelling<intrests>
+    </person>
+    <person>
+        <name>Ashley</name>
+        <hobbies>Painting</hobbies>
+        <intrests>Art<intrests>
+    </person>
+</people>
