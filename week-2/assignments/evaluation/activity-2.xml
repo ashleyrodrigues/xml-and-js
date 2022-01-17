@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cards>
+    <card>
+        <Name>Joe Martini</Name>
+        <Contact type="Home">+1 (415) 755-1234</Contact>
+        <Contact type="Work">+1 (800) 755-9867</Contact>
+        <Contact type="Mobile">+1 (510) 575-1212</Contact>
+        <Email>joe@joe.com</Email>
+    </card>
+
+    <card>
+        <Name>Joseph Weller</Name>
+        <Contact type="Home">+1 (415) 005-1234</Contact>
+        <Contact type="Work">+1 (800) 505-9867</Contact>
+        <Contact type="Mobile">+1 (510) 550-1212</Contact>
+        <Email>joeseph@jweller.com</Email>
+    </card>
+
+    <card>
+        <Name>Sam Smith</Name>
+        <Contact type="Home">+1 (415) 595-1234</Contact>
+        <Contact type="Work">+1 (800) 565-9867</Contact>
+        <Contact type="Mobile">+1 (510) 515-1212</Contact>
+        <Email>Sam@Smith.com</Email>
+    </card>
+
+    <card>
+        <Name>Peter Dsa</Name>
+        <Contact type="Home">+1 (415) 545-1234</Contact>
+        <Contact type="Work">+1 (800) 535-9867</Contact>
+        <Contact type="Mobile">+1 (510) 525-1212</Contact>
+        <Email>Peter@Dsa.com</Email>
+    </card>
+</cards>
