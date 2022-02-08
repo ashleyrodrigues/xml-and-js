@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>Test Input</title>
+    <script language="JavaScript">
+        
+        function onSubmit(event) {
+            event.preventDefault();
+            const form = event.target;
+            const Name = form.name.value;
+            const gender = form.gender.value;
+
+            const modeTansport = form.Transport;
+				let mode = "";
+				for (let i = 0; modeTansport[i]; ++i) {
+					if (modeTansport[i].checked) {
+						mode += modeTansport[i].value + " ";
+					}
+				}
+
+            console.log(`Selected Name: ${Name}`);
+            console.log(`Selected Gender: ${gender}`);
+            console.log(`Selected Transport Mode: ${mode}`);
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <form onSubmit="onSubmit(event)" action="" method="get">
+    Enter Name: <br />
+    <input type="text" id="name" name="name" value="" required />
+</body><br />
+
+Gender : <br />
+<input type="radio" id="male" name="gender" value="male">
+<label for="male">Male</label><br>
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">Female</label><br>
+
+Transport : <br />
+
+<input type="checkbox" id="v1" name="Transport" value="Bike">
+<label for="v1">Bike</label><br>
+<input type="checkbox" id="v2" name="Transport" value="Car">
+<label for="v2">Car</label><br>
+<input type="checkbox" id="v3" name="Transport" value="Boat">
+<label for="v3">Boat</label><br>
+
+<button type="submit">Submit</button>
+</form>
+</body>
+
+</html>

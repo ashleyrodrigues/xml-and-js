@@ -1,47 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE products 
-[
-  <!ELEMENT products (product+)>
-  <!ELEMENT product (productName, manufacturer, description?, price+, productItems)>
-  <!ELEMENT productName (#PCDATA)>
-  <!ELEMENT manufacturer (#PCDATA)>
-  <!ELEMENT description (#PCDATA)>
-  <!ELEMENT price (#PCDATA)>
-  <!ELEMENT productItems (#PCDATA)>
-]>
-<products>
-  <product>
-    <productName>Dog Shirt Gift Basket</productName>
-    <manufacturer>SJB Pet BoutiqueSYMBOLHERE</manufacturer>
-    <description>Something for every day of the week</description>
-    <price>US$35.99</price>
-    <price>CAD$44.99</price>
-    <price>&#8364;26.79</price>
-    <productItems>1200, 1201, 1202, 1203, 1204, 1205, 1206</productItems>
-  </product>
-  <product>
-    <productName>Car Curiosity Basket</productName>
-    <manufacturer>SJB Pet BoutiqueSYMBOLHERE</manufacturer>
-    <description>Playtime morning, noon, and night</description>
-    <price>US$15.99</price>
-    <price>CAD$18.82</price>
-    <price>&#8364;11.90</price>
-    <productItems>4430, 6500, 4434</productItems>
-  </product>
-  <product>
-    <productName>Piggy Snuggle Basket</productName>
-    <manufacturer>ACMESYMBOLHERE</manufacturer>
-    <price>US$17.50</price>
-    <price>CAD$21.96</price>
-    <price>&#8364;13.03</price>
-    <productItems>3230, 3232</productItems>
-  </product>
-  <product>
-    <productName>Dog Snuggle Basket</productName>
-    <manufacturer>ACMESYMBOLHERE</manufacturer>
-    <price>US$14.25</price>
-    <price>CAD$17.88</price>
-    <price>&#8364;10.61</price>
-    <productItems>3230, 3232, 3250</productItems>
-  </product>
-</products>
+<!DOCTYPE inventory [
+    <!ELEMENT inventory (product+)>
+    <!ELEMENT product (name, sizes?, prices?)>
+    <!ATTLIST product id ID #REQUIRED>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT sizes (size+)>
+    <!ELEMENT size (#PCDATA)>
+    <!ATTLIST size type CDATA #REQUIRED>
+    <!ELEMENT prices (price+)>
+    <!ELEMENT price (#PCDATA)>
+    <!ATTLIST price currency CDATA #REQUIRED>
+	]>
+<inventory>
+    <product id="a332d8d2-86d7-11ec-a8a3-0242ac120002">
+        <name>Microfleece hoodie</name>
+        <sizes>
+            <size type="XS">0</size>
+            <size type="S">3</size>
+            <size type="M">13</size>
+            <size type="L">5</size>
+            <size type="XL">2</size>
+        </sizes>
+        <prices>
+            <price currency="USD">US&#36;49.99</price>
+            <price currency="CAD">CAD&#36;54.99</price>
+        </prices>
+    </product>
+    <product id="a332dac6-86d7-11ec-a8a3-0242ac120002">
+        <name>Vintage Soft Hoodie</name>
+        <sizes>
+            <size type="XS">3</size>
+            <size type="S">8</size>
+            <size type="M">25</size>
+            <size type="L">12</size>
+            <size type="XL">4</size>
+        </sizes>
+        <prices>
+            <price currency="USD">US&#36;39.99</price>
+            <price currency="CAD">CAD&#36;49.99</price>
+        </prices>
+
+    </product>
+    <product id="a332dbf2-86d7-11ec-a8a3-0242ac120002">
+        <name>Crewneck Sweatshirt</name>
+        <sizes>
+            <size type="XS">0</size>
+            <size type="S">0</size>
+            <size type="M">15</size>
+            <size type="L">13</size>
+            <size type="XL">0</size>
+        </sizes>
+        <prices>
+            <price currency="CAD">CAD&#36;47.97</price>
+        </prices>
+
+    </product>
+    <product id="a332dd0a-86d7-11ec-a8a3-0242ac120002">
+        <name>French Terry Raglan Crewneck Sweatshirt</name>
+        <sizes>
+            <size type="XS">0</size>
+            <size type="S">0</size>
+            <size type="M">0</size>
+            <size type="L">1</size>
+            <size type="XL">0</size>
+        </sizes>
+        <prices>
+            <price currency="USD">US&#36;37.97</price>
+        </prices>
+
+    </product>
+</inventory>
