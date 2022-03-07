@@ -50,7 +50,7 @@ const renderTable = (xmlData) => {
   );
 };
 
-loadData(`http://localhost:8080/books.xml`, renderTable);
+loadData(`http://localhost:8080/week-6/books.xml`, renderTable);
 
 const onReset = () => {
   window.location.replace(window.location.pathname);
