@@ -4,7 +4,8 @@
   "description": "",
   "main": "activity-server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node assignment-server.js",
+    "dev": "nodemon assignment-server.js"
   },
   "author": "",
   "license": "ISC",
