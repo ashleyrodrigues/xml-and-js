@@ -10,7 +10,7 @@ const loadData = (path) =>
     xhttp.send();
   });
 
-const renderTable = (data, nameTerm) => {
+const renderTable = ( data, nameTerm) => {
   const tableBody = document.getElementById("table-body");
 
   if (!tableBody) {
