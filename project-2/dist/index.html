@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Drug Data</title>
+	</head>
+	<body>
+		<form onsubmit="onSubmit(event)" onreset="onReset()">
+			<input type="text" name="id" id="input-id" placeholder="Search by ID" />
+			<input
+				type="text"
+				name="drug_company"
+				id="input-drug-company"
+				placeholder="Search by drug company"
+			/>
+			<input
+				type="text"
+				name="drug_name"
+				id="input-drug-name"
+				placeholder="Search by drug name"
+			/>
+			<input
+				type="text"
+				name="drug_name_generic"
+				id="input-drug-name-generic"
+				placeholder="Search by generic name"
+			/>
+			<button type="submit">Apply filters</button>
+			<button type="reset">Reset</button>
+		</form>
+		<br />
+		<table border="1">
+			<thead>
+				<th>ID</th>
+				<th>Drug Company</th>
+				<th>Drug Name</th>
+				<th>Drug Generic Name</th>
+			</thead>
+			<tbody id="table-body"></tbody>
+		</table>
+	</body>
+	<script src="./bundle.js"></script>
+</html>
